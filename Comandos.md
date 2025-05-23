@@ -58,7 +58,8 @@ git push origin -d <nombre.de.la.rama>                              | Eliminar r
 git branch -d <Nombre de la rama>                                   | Eliminar rama (Sirve para ramas locales, de preferencia estar en la rama principal)  
 git merge <La rama que queremos fusionar>                           | Fusionar ramas (IMPORTANTE: estar en la rama con que queremos combinar)  
 git merge --continue                                                | Continuar con el proceso de fusionar cuando sale un conflicto en merge  
-git fetch --all | Jalar los cambios del repositorio remoto
+git fetch --all | Descarga los cambios del repositorio remoto sin fusionar las ramas
+git pull  | Descargar cambios de la repo remota y los fusiona 
 
 
 ## Asociar editor de texto
