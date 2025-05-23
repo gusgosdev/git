@@ -43,11 +43,13 @@ git config --global init.defaultBranch main     | Cambiar (master) por main
 git reset --soft HEAD~1                         | Eliminar commit  
 git log                                         | Ver el commit (e historial de commits.IMPORTANTE: estar en la rama que queremos ver sus commits)  
 git log --oneline                               | Ver los commits con sus comentarios  
-git log -p                                      | Mostrar el commit, y que muestre los cambios que se hicieron  
-Q                                               | Para salir del modo de commits    
+git log -p                                      | Mostrar el commit, y que muestre los cambios que se hicieron 
+git log --grep=<nombre> | buscamos el commit que se llama nombre (reemplaza <nombre> por el commit que buscas)
+Q                                               | Para salir del modo de commits  
+.gitignore | omite archivos para que no se guarde en los commits
 git branch <nombre.de.la.rama>                  | Crear rama  
 git branch version-javascript                   | Rama con nombre  
-git branch                                      | Ver la rama  
+git branch                                      | Ver las ramas
 git branch -a                                   | Ver las ramas incluyendo las ramas remotas  
 git branch -b <nombre.de.la.rama>               | Crear e ir a esa rama  
 git branch -m <nombre de la rama>               | Editar el nombre de una rama (Estar en la rama que queremos modificar)  
@@ -56,6 +58,8 @@ git push origin -d <nombre.de.la.rama>                              | Eliminar r
 git branch -d <Nombre de la rama>                                   | Eliminar rama (Sirve para ramas locales, de preferencia estar en la rama principal)  
 git merge <La rama que queremos fusionar>                           | Fusionar ramas (IMPORTANTE: estar en la rama con que queremos combinar)  
 git merge --continue                                                | Continuar con el proceso de fusionar cuando sale un conflicto en merge  
+git fetch --all | Jalar los cambios del repositorio remoto
+
 
 ## Asociar editor de texto
 git config --global core.editor "code --wait"
